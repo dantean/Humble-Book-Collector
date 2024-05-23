@@ -6,6 +6,17 @@ const resolvers = {
     users: async () => {
       return User.find().populate('thoughts');
     },
+        getSingleUser: async ( parent, args, context) => {
+        const foundUser = await User.findOne({
+          $or: [{ _id: context.user._id}, { username: context.user.username }],
+        });
+    
+        if (!foundUser) {
+          return res.status(400).json({ message: 'Cannot find a user with this id!' });
+        }
+    
+      return foundUser;
+      },
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('thoughts');
     },
