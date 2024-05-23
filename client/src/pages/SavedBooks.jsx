@@ -7,7 +7,7 @@ import {
   Col
 } from 'react-bootstrap';
 
-import { getMe, deleteBook } from '../utils/API';
+import { getMe, deleteBook } from '../utils/API'; // reFactor to use mutation + query for getSingleUser and deleteBook
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 

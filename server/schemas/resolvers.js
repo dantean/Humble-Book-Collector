@@ -3,9 +3,6 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
-    users: async () => {
-      return User.find().populate('thoughts');
-    },
         getSingleUser: async ( parent, args, context) => {
         const foundUser = await User.findOne({
           $or: [{ _id: context.user._id}, { username: context.user.username }],
@@ -22,7 +19,7 @@ const resolvers = {
 
   Mutation: {
 
-    async createUser( parent, args, context) {
+    async createUser( parent, {username, email, password}, context) {
       const user = await User.create({ username, email, password });
   
       if (!user) {
@@ -31,7 +28,7 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-  },
+
 
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
@@ -50,6 +47,8 @@ const resolvers = {
 
       return { token, user };
     },
+    // implement saveBook and deleteBook mutation
+  },
   };
 
 module.exports = resolvers;
