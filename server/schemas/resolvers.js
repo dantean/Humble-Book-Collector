@@ -48,6 +48,33 @@ const resolvers = {
       return { token, user };
     },
     // implement saveBook and deleteBook mutation
+
+    saveBook: async (parent, { bookId, authors, title, image, link }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { savedBooks: { bookId, authors, title, image, link } } },
+          { new: true, runValidators: true }
+        );
+
+        return updatedUser;
+      }
+
+      throw new AuthenticationError('You need to be logged in!');
+    },
+    deleteBook: async (parent, { bookId }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $pull: { savedBooks: { bookId } } },
+          { new: true }
+        );
+
+        return updatedUser;
+      }
+
+      throw new AuthenticationError('You need to be logged in!');
+    }
   },
   };
 
