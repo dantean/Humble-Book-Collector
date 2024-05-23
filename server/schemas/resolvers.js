@@ -14,7 +14,7 @@ const resolvers = {
     
       return foundUser;
       },
-      // add the saveBook and deleteBook mutations here later
+
   },
 
   Mutation: {
@@ -47,7 +47,6 @@ const resolvers = {
 
       return { token, user };
     },
-    // implement saveBook and deleteBook mutation
 
     saveBook: async (parent, { bookId, authors, title, image, link }, context) => {
       if (context.user) {
@@ -75,7 +74,7 @@ const resolvers = {
 
       throw new AuthenticationError('You need to be logged in!');
     }
-  },
+  }
   };
 
 module.exports = resolvers;

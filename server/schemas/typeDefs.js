@@ -30,7 +30,6 @@ const typeDefs = `
     login(email: String!, password: String!): Auth
     saveBook(bookID: String!, authors: String!, title: String!, image: String!, link: String!): User
     deleteBook(bookId: String!): User
-    // implement saveBook and deleteBook mutation
   }
 `;
 
