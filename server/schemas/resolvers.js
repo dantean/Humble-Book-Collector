@@ -12,7 +12,7 @@ const resolvers = {
         });
     
         if (!foundUser) {
-          return res.status(400).json({ message: 'Cannot find a user with this id!' });
+          throw AuthenticationError
         }
     
       return foundUser;
@@ -41,6 +41,17 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+
+    async createUser( parent, args, context) {
+      const user = await User.create(args);
+  
+      if (!user) {
+        throw AuthenticationError
+      }
+      const token = signToken(user);
+      return { token, user };
+    },
+
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
