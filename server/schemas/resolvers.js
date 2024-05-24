@@ -1,6 +1,6 @@
-const { User, Thought } = require('../models');
+const { User } = require('../models');
 const { signToken } = require('../utils/auth');
-const { AuthenticationError } = require('../utils/auth'); 
+const { AuthenticationError } = require('apollo-server-express');
 
 const resolvers = {
   Query: {
@@ -11,13 +11,13 @@ const resolvers = {
         });
 
         if (!foundUser) {
-          throw AuthenticationError;
+          throw new AuthenticationError('User not found');
         }
 
         return foundUser;
       }
 
-      throw AuthenticationError;
+      throw new AuthenticationError('You need to be logged in!');
     },
   },
 
@@ -26,7 +26,7 @@ const resolvers = {
       const user = await User.create({ username, email, password });
 
       if (!user) {
-        throw AuthenticationError;
+        throw new AuthenticationError('Error creating user');
       }
 
       const token = signToken(user);
@@ -37,31 +37,31 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-      throw AuthenticationError;
+        throw new AuthenticationError('No user found with this email address');
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw AuthenticationError;
+        throw new AuthenticationError('Incorrect password');
       }
 
       const token = signToken(user);
       return { token, user };
     },
 
-    saveBook: async (parent, { bookId, authors, title, image, link, description }, context) => {
+    saveBook: async (parent, { bookData }, context) => {
       if (context.user) {
         const updatedUser = await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { savedBooks: { bookId, authors, title, image, link, description } } },
+          { $addToSet: { savedBooks: bookData } },
           { new: true, runValidators: true }
         );
 
         return updatedUser;
       }
 
-      throw AuthenticationError;
+      throw new AuthenticationError('You need to be logged in!');
     },
 
     deleteBook: async (parent, { bookId }, context) => {
@@ -75,7 +75,7 @@ const resolvers = {
         return updatedUser;
       }
 
-      throw AuthenticationError;
+      throw new AuthenticationError('You need to be logged in!');
     },
   },
 };
