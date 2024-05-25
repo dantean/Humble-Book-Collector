@@ -75,8 +75,6 @@ padding: 10px;">
 
 My name's Joseph. If I'm not writing code, taking pictures, or fixing computers, then I'm probably practicing Tai Chi ☯️
 
-😸
-
 <a href="http://github.com/dantean">![Code I Write](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 </a> <a href="http://www.dantean.dev">🚧</a>
 
