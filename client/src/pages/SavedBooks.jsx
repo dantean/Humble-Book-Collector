@@ -16,10 +16,13 @@ import { DELETE_BOOK } from '../utils/mutations';
 const SavedBooks = () => {
   // const [userData, setUserData] = useState({});
   const {loading, data } = useQuery(QUERY_ME)
+  // const [userData, setUserData] = useState({})
   const userData = data?.getSingleUser || {}
   const [deleteBook, {error}] = useMutation(DELETE_BOOK)
   // const userDataLength = Object.keys(userData).length;
-
+  // useEffect(() => {
+  //   setUserData(data)
+  // }, [data]);
   // useEffect(() => {
   //   const getUserData = async () => {
   //     try {
