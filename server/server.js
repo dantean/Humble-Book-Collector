@@ -32,11 +32,15 @@ async function startApolloServer() {
     });
   }
 
-  db.once('open', () => {
+  db.on('connected', () => {
     app.listen(PORT, () => {
       console.log(`API server running on port ${PORT}!`);
       console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
     });
+  });
+
+  db.on('error', (err) => {
+    console.error('MongoDB connection error:', err);
   });
 }
 
