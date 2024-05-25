@@ -1,25 +1,20 @@
 # Dantean's Book Fetcher
 
-## Description
+## What is it?
 
-An interactive web application developed using the MERN stack with the purpose of helping you find books and save them to a collection. 
-
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql)
-
-## Example
+An interactive web application developed using the MERN stack with the purpose of helping you find books and save them to a collection. Dante was a poet, so it's sort of like Dante's search engine? But not really.
 
 ![Example 1](/assets/ss1.png)
 ![Example 2](/assets/ss2.png)
 
-### Live Link 
+
+
+### Use the application with the live link 
+
+https://book-fetcher.onrender.com
 
 [![Deployed via Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://book-fetcher.onrender.com) ![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)
 
-https://book-fetcher.onrender.com
 
 ### To Install Locally
 
@@ -39,7 +34,6 @@ https://book-fetcher.onrender.com
 -  Smile 😺
 
 ## Acceptance Criteria
-
 
 <div style="overflow-y: scroll; height: 200px; border: 1px solid #ccc; 
 padding: 10px;">
@@ -75,19 +69,31 @@ padding: 10px;">
 - THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  ✅ 
 </div>
 
+
+
 ## About The Creator
 
-My name's Joseph and I write code. I also take pictures and fix computers, but that's besides the point 😺
+My name's Joseph. If I'm not writing code, taking pictures, or fixing computers, then I'm probably practicing Tai Chi ☯️
+
+😸
 
 <a href="http://github.com/dantean">![Code I Write](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 </a> <a href="http://www.dantean.dev">🚧</a>
 
-## Contributors
+## Special Thanks 🙏
  
 * Instructor Phil loy and tutor Juno Nguyen both helped me tremendously in all stages of this project. I couldn't have done it without either of you! 
 * ChatGPT for helping me find syntax errors and typos. The best replacement for Clippy I could ever ask for! 📎📎📎📎
 
 ![University of Miami](./assets/umlogo.png) ![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
+
+## Created with
+
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql)
 
 ## License
 
