@@ -26,8 +26,8 @@ An interactive web application developed using the MERN stack with the purpose o
 
 
 #### ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-- Clone the from [Github](http://www.github.com/dantean/book-fetcher)
-- Enter `npm install ` in the terminal to install all necessary packages
+- Clone the repo from [Github](http://www.github.com/dantean/book-fetcher)
+- Enter `npm install` in the terminal to install all necessary packages
 - Enter `npm run develop` in the terminal
 
 ## Usage
@@ -42,55 +42,54 @@ An interactive web application developed using the MERN stack with the purpose o
 
 ## Acceptance Criteria
 
-```md
-GIVEN a book search engine
-WHEN I load the search engine
-✅ THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-WHEN I click on the Search for Books menu option
-✅ THEN I am presented with an input field to search for books and a submit button
-WHEN I am not logged in and enter a search term in the input field and click the submit button
-✅ THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
-WHEN I click on the Login/Signup menu option
-✅ THEN a modal appears on the screen with a toggle between the option to log in or sign up
-WHEN the toggle is set to Signup
-✅ THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-WHEN the toggle is set to Login
-✅ THEN I am presented with two inputs for an email address and a password and login button
-WHEN I enter a valid email address and create a password and click on the signup button
-✅ THEN my user account is created and I am logged in to the site
-WHEN I enter my account’s email address and password and click on the login button
-✅ THEN I the modal closes and I am logged in to the site
-WHEN I am logged in to the site
-✅ THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-WHEN I am logged in and enter a search term in the input field and click the submit button
-✅ THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-WHEN I click on the Save button on a book
-✅ THEN that book’s information is saved to my account
-WHEN I click on the option to see my saved books
-✅ THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-WHEN I click on the Remove button on a book
-✅ THEN that book is deleted from my saved books list
-WHEN I click on the Logout button
-✅ THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
-```
 
-## About Me
+<div style="overflow-y: scroll; height: 200px; border: 1px solid #ccc; 
+padding: 10px;">
 
-My name's Joseph, and I'm a fullstack web developer 😺
+- GIVEN a book search engine
+- WHEN I load the search engine
++ THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button ✅
+- WHEN I click on the Search for Books menu option
++ THEN I am presented with an input field to search for books and a submit button✅ 
+- WHEN I am not logged in and enter a search term in the input field and click the submit button
+- THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site ✅ 
+- WHEN I click on the Login/Signup menu option
+- THEN a modal appears on the screen with a toggle between the option to log in or sign up ✅ 
+- WHEN the toggle is set to Signup
+- THEN I am presented with three inputs for a username, an email address, and a password, and a signup button ✅ 
+- WHEN the toggle is set to Login
+- THEN I am presented with two inputs for an email address and a password and login button ✅ 
+- WHEN I enter a valid email address and create a password and click on the signup button
+- WHEN my user account is created and I am logged in to the site ✅ 
+- WHEN I enter my account’s email address and password and click on the login button
+- THEN I the modal closes and I am logged in to the site ✅ 
+- WHEN I am logged in to the site
+- THEN the menu options change to Search for Books, an option to see my saved books, and Logout ✅ 
+- WHEN I am logged in and enter a search term in the input field and click the submit button
+- THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account ✅ 
+- WHEN I click on the Save button on a book
+- THEN that book’s information is saved to my account ✅ 
+- WHEN I click on the option to see my saved books
+- THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account ✅ 
+- WHEN I click on the Remove button on a book
+- THEN that book is deleted from my saved books list ✅ 
+- WHEN I click on the Logout button
+- THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  ✅ 
+</div>
+
+## About The Creator
+
+My name's Joseph I write code 😺
 
 <a href="http://github.com/dantean">![Code I Write](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-</a> 
+</a> <a href="https://welcome.miami.edu">![University of Miami](./assets/umlogo.png)</a> <a href="http://www.dantean.dev">🚧</a>
 
-## Credit Where Credit Is Due
+## Contributors
+ 
+* Instructor Phil loy and tutor Juno Nguyen both helped me tremendously in all stages of this project. I couldn't have done it without either of you! 
+* ChatGPT for helping me find syntax errors and typos. The best replacement for Clippy I could ever ask for! 📎📎📎📎
 
-![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
-
-- Instructor Phil Loy for walking me through much of this project and answering many of the same questions over and over and over again
-- Tutor Juno Nguyen for breaking down the project, explaining every detail, and helping me troubleshoot numerous errors
-
-
-![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
-- ChatGPT for helping me find syntax errors and typos. The best replacement for Clippy I could ever ask for! 📎📎📎📎
+![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white) ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 
 ## License
 
