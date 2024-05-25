@@ -15,15 +15,13 @@ An interactive web application developed using the MERN stack with the purpose o
 ![Example 1](/assets/ss1.png)
 ![Example 2](/assets/ss2.png)
 
-### Live Link ![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)
+### Live Link 
 
+[![Deployed via Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://book-fetcher.onrender.com) ![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)
 
-- [![Deployed via Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://book-fetcher.onrender.com)
-
-- -  https://book-fetcher.onrender.com
+https://book-fetcher.onrender.com
 
 ### To Install Locally
-
 
 #### ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 - Clone the repo from [Github](http://www.github.com/dantean/book-fetcher)
@@ -48,9 +46,9 @@ padding: 10px;">
 
 - GIVEN a book search engine
 - WHEN I load the search engine
-+ THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button ✅
+- THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button ✅
 - WHEN I click on the Search for Books menu option
-+ THEN I am presented with an input field to search for books and a submit button✅ 
+- THEN I am presented with an input field to search for books and a submit button✅ 
 - WHEN I am not logged in and enter a search term in the input field and click the submit button
 - THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site ✅ 
 - WHEN I click on the Login/Signup menu option
@@ -79,23 +77,24 @@ padding: 10px;">
 
 ## About The Creator
 
-My name's Joseph I write code 😺
+My name's Joseph and I write code. I also take pictures and fix computers, but that's besides the point 😺
 
 <a href="http://github.com/dantean">![Code I Write](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-</a> <a href="https://welcome.miami.edu">![University of Miami](./assets/umlogo.png)</a> <a href="http://www.dantean.dev">🚧</a>
+</a> <a href="http://www.dantean.dev">🚧</a>
 
 ## Contributors
  
 * Instructor Phil loy and tutor Juno Nguyen both helped me tremendously in all stages of this project. I couldn't have done it without either of you! 
 * ChatGPT for helping me find syntax errors and typos. The best replacement for Clippy I could ever ask for! 📎📎📎📎
 
-![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white) ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+![University of Miami](./assets/umlogo.png) ![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
 
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) 
 
-```md
+<div style="overflow-y: scroll; height: 200px; border: 1px solid #ccc; 
+padding: 10px;">
 Copyright (c) 2024 Joseph Monticelli
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -115,4 +114,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+</div>
