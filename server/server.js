@@ -31,6 +31,13 @@ async function startApolloServer() {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
   }
+
+  db.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`API server running on port ${PORT}!`);
+      console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+    });
+  });
 }
 
 startApolloServer();

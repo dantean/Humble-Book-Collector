@@ -1,22 +1,11 @@
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://admin:<password>@cluster0.8jrx1dr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+dotenv.config();
 
-const client = new MongoClient(uri, {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  }
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/googlebooks', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
-async function run() {
-  try {
-    await client.connect();
-    await client.db("admin").command({ ping: 1 });
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
-  } finally {
-    await client.close();
-  }
-}
-run().catch(console.dir);
+module.exports = mongoose.connection;
