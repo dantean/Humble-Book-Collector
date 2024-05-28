@@ -80,7 +80,7 @@ My name's Joseph. If I'm not writing code, taking pictures, or fixing computers,
 
 ## Special Thanks 🙏
  
-* Instructor Phil loy and tutor Juno Nguyen both helped me tremendously in all stages of this project. I couldn't have done it without either of you! 
+* Instructor Phil loy and tutors Juno Nguyen and Carlin Shaw all helped me tremendously in all stages of this project. I couldn't have done it without any of you! 
 * ChatGPT for helping me find syntax errors and typos. The best replacement for Clippy I could ever ask for! 📎📎📎📎
 
 ![University of Miami](./assets/umlogo.png) ![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
