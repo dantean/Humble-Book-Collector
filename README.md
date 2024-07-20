@@ -45,8 +45,6 @@ My name's Joseph. If I'm not writing code, taking pictures, or fixing computers,
 * Phil loy, Juno Nguyen, and Carlin for coaching me throughout this project 
 * ChatGPT for helping me find syntax errors and typos. The best replacement for Clippy I could ever ask for! 📎📎📎📎
 
-![University of Miami](./assets/umlogo.png) ![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
-
 ## Created with
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
